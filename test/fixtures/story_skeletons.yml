@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  title: MyString
+  story_text: MyText
+  number_of_ad_words: MyString
+  int: MyString
+
+two:
+  category: MyString
+  title: MyString
+  story_text: MyText
+  number_of_ad_words: MyString
+  int: MyString
