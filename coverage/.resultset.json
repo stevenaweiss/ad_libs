@@ -161,15 +161,19 @@
         1,
         null
       ],
-      "/Users/stevenweiss/dev/ad_libs/app/models/story_skeleton.rb": [
+      "/Users/stevenweiss/dev/ad_libs/app/controllers/welcome_controller.rb": [
         1,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/app/controllers/application_controller.rb": [
         1,
-        1,
-        1,
+        null,
+        null,
         1,
         null
       ]
     },
-    "timestamp": 1396638847
+    "timestamp": 1396641301
   }
 }
