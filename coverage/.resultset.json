@@ -1,0 +1,175 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/stevenweiss/dev/ad_libs/config/environment.rb": [
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/application.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/boot.rb": [
+        null,
+        1,
+        null,
+        1
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/environments/test.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/backtrace_silencers.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/secret_token.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/session_store.rb": [
+        null,
+        null,
+        1
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/initializers/wrap_parameters.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/config/routes.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/app/models/story_skeleton.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1396638847
+  }
+}
