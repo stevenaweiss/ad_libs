@@ -1,5 +1,8 @@
-var allTitles = [];
-
+// var allTitles = [];
+// var allIds = [];
+var titleAndId = [];
+var storyTitle;
+var selectedStoryId;
 
 function getStorySkeletons(){
   // console.log("trying to get");
@@ -8,30 +11,41 @@ function getStorySkeletons(){
       var skeletonTitleLength = allSkeletons.responseJSON.length;
       for (var i = 0; i < skeletonTitleLength; i++){
         var title = allSkeletons.responseJSON[i].title;
-        allTitles.push(title);
-        // console.log(title);
+        var id = allSkeletons.responseJSON[i].id;
+        titleAndId[i] = {
+          key: title,
+          val: id
+        };
       }
     }
   );
-}
-
-function loadStoryTitles(){
-  for(var i = 0; i <= allTitles.length; i++)
-    $("#categories").append($("<option>").attr("value", allTitles[i]).append(allTitles[i]));
-
-    $("#initiate-game").submit(function(e){
+  $("#initiate-game").submit(function(e){
     e.preventDefault();
-    console.log("submittinnnnnng!");
-    var storyTitle = $("#categories").val();
-    console.log("this is " + storyTitle);
+    storyTitle = $("#categories").val();
+    console.log("Story title is " + storyTitle);
+      for(var i = 0; i <= titleAndId.length; i++)
+        if(titleAndId[i]["key"] == storyTitle){
+          selectedStoryId = titleAndId[i]["val"];
+      }
     $("#initiate-game").remove();
     });
 }
 
-// $("#initiate-game").submit(function(e){
-//   e.preventDefault();
-//   console.log("submittinnnnnng!");
-//   var storyTitle = $("#categories").val();
-//   console.log("this is " + storyTitle);
-// });
+function loadStoryTitles(){
+  for(var i = 0; i <= titleAndId.length; i++)
+    $("#categories").append(
+      $("<option>").attr("value", titleAndId[i]["key"]).append(titleAndId[i]["key"])
+      );
+
+}
+
+
+function getStorySkeletonText(){
+  var story = $.getJSON("/story_skeleton/" + selectedStoryId).done(
+    function(){
+      var storyText = story.responseJSON.story_text;
+    }
+  );
+  console.log(storyText);
+}
 
