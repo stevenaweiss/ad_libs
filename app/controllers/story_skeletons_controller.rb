@@ -1,11 +1,7 @@
-class StorySkeleton < ApplicationController
+class StorySkeletonsController < ApplicationController
   def index
     @story_skeletons = StorySkeleton.all
-
-    respond_to do |format|
-      format.html { render :index }
-      format.json { render json: @story_skeletons }
-    end
+    render json: @story_skeletons
   end
 
   def show

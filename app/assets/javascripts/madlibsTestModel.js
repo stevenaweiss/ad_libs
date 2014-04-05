@@ -27,6 +27,7 @@ MadLib.prototype.replaceWords = function(){
 
 // var replacementWords = ["monkey", "cheese", "walking"];
 
+var allTitles = [];
 
 function getStorySkeletons(){
   console.log("trying to get");
@@ -35,10 +36,12 @@ function getStorySkeletons(){
       var skeletonTitleLength = allSkeletons.responseJSON.length;
       for (var i = 0; i < skeletonTitleLength; i++){
         var title = allSkeletons.responseJSON[i].title;
+        allTitles.push(title);
         console.log(title);
       }
     }
   );
+  // return allTitles;
 }
 
 
