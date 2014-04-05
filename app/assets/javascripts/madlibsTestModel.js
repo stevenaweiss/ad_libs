@@ -23,11 +23,22 @@ MadLib.prototype.replaceWords = function(){
   return this.lib;
 };
 
-var madLib = new MadLib("The {noun} walked through the {noun} while {adverb}.");
+// var madLib = new MadLib("The {noun} walked through the {noun} while {adverb}.");
 
 // var replacementWords = ["monkey", "cheese", "walking"];
 
 
-
+function getStorySkeletons(){
+  console.log("trying to get");
+  var allSkeletons = $.getJSON("/story_skeletons").done(
+    function(){
+      var skeletonTitleLength = allSkeletons.responseJSON.length;
+      for (var i = 0; i < skeletonTitleLength; i++){
+        var title = allSkeletons.responseJSON[i].title;
+        console.log(title);
+      }
+    }
+  );
+}
 
 
