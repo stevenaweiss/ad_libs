@@ -30,7 +30,7 @@ MadLib.prototype.replaceWords = function(){
 var allTitles = [];
 
 function getStorySkeletons(){
-  console.log("trying to get");
+  // console.log("trying to get");
   var allSkeletons = $.getJSON("/story_skeletons").done(
     function(){
       var skeletonTitleLength = allSkeletons.responseJSON.length;
@@ -41,7 +41,13 @@ function getStorySkeletons(){
       }
     }
   );
-  // return allTitles;
 }
+
+function loadStoryTitles(){
+  for(var i = 0; i <= allTitles.length; i++)
+    $("#categories").append($("<option>").attr("value", allTitles[i]).append(allTitles[i]));
+  }
+
+$("#categories").val();
 
 
