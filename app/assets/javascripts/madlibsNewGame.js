@@ -41,11 +41,11 @@ function loadStoryTitles(){
 
 
 function getStorySkeletonText(){
-  var story = $.getJSON("/story_skeleton/" + selectedStoryId).done(
+  var story = $.getJSON("/story_skeletons/" + selectedStoryId).done(
     function(){
-      var storyText = story.responseJSON.story_text;
+      storyText = story.responseJSON.story_text;
     }
   );
-  console.log(storyText);
+  return story;
 }
 
