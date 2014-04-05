@@ -9,6 +9,7 @@ class StorySkeleton < ApplicationController
   end
 
   def show
-    render json: StorySkeleton.find(params[:title])
+    @story_skeleton = StorySkeleton.find(params[:id])
+    render json: @story_skeleton
   end
 end
