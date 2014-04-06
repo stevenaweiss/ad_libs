@@ -2,20 +2,14 @@ var newGame;
 
 function playGame(){
   newGame = new MadLib(storyText);
-
   newGame.findWordsToReplace();
-
   newGame.getAnswers();
-
   newGame.replaceWords();
 
   var finishedStory = newGame.replaceWords();
 
-  function appendStory(){
+  $("#completed-story").append("<p>").append(finishedStory);
 
-  $("body").append("<p>").append(finishedStory);
-
-}
-  // return finishedStory;
+  return finishedStory;
 
 }

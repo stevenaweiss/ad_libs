@@ -1,23 +1,33 @@
-<h1 id="title">Ad Libbin'</h1>
+<div id="page-wrapper">
+  <div id="title-div">
+    <h1 id="title">Ad Libbin'</h1>
+  </div>
 
-<form id="initiate-game">
-  <label>Select A Story</label>
-  <select id="categories"name="categories">
-  </select>
-  <label>Select A Number Of Players</label>
-  <select>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  <input type="submit" value="Start Game!">
-  <submit>
-</form>
+  <form id="initiate-game">
+    <label>Select A Story</label>
+    <select id="categories"name="categories">
+    </select>
+    <label>Select A Number Of Players</label>
+    <select id="number-of-players">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    <input type="submit" value="Start Game!">
+    <!-- <submit> -->
+  </form>
 
-<script type="template" class="template">
-  <p>
-  <%%= madlib.get('title') %>
-  </p>
+  <div id="completed-story">
+    
+  </div>
 
-</script>
+  <div id="get-answers">
+    <form id="answer-text-label">
+      <span id="word-text"></span>
+      <input type="text" id="answer-text" />
+      <button id="submit-answer">Submit Answer!</button>
+    </form>
+  </div>
+
+</div>

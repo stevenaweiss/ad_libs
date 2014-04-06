@@ -1,31 +1,50 @@
-function MadLib(lib){
-  this.lib = lib;
+//the Mad Lib model, initialized with a lib - the story text - 
+function MadLib(libText){
+  this.libText = libText;
   this.answers = [];
 }
 
+//finding all words to replace by matching all characters within {}
 MadLib.prototype.findWordsToReplace = function(){
-  var wordsToReplace = this.lib.match(/{([^}]*)}/g);
+  var wordsToReplace = this.libText.match(/{([^}]*)}/g);
   return wordsToReplace;
 };
 
-MadLib.prototype.getAnswers = function(array){
-  this.findWordsToReplace().forEach(function(word){
-      var answer = prompt(word);
+//prompting user for answers with the word to replace, saving those answers to an array
+MadLib.prototype.getAnswers = function(){
+  var findWords = this.findWordsToReplace();
+  findWords.forEach(function(word){
+      // var answer = prompt(word);
+      var answer = getAnswersInputs(word);
       this.answers.push(answer);
     }, this);
   return this.answers;
 };
 
+//replacing all characters within {} with the answers array
 MadLib.prototype.replaceWords = function(){
   this.answers.forEach(function(answer){
-    this.lib = this.lib.replace(/{([^}]*)}/, answer);
+    this.libText = this.libText.replace(/{([^}]*)}/, answer);
   }, this);
-  return this.lib;
+  return this.libText;
 };
 
-// var madLib = new MadLib("The {noun} walked through the {noun} while {adverb}.");
-// var replacementWords = ["monkey", "cheese", "walking"];
 
-
+function getAnswersInputs(word){
+  newWord = word.replace(/[{}]/g, "");
+  var submission;
+  var wordText = $("#word-text");
+  console.log("hey" + newWord);
+  wordText.text(newWord + ":");
+  $("#answer-text-label").submit(function(e){
+    e.preventDefault();
+     submission = $("#answer-text").val();
+     console.log(submission);
+     this.reset();
+     wordText.text("");
+     return submission;
+  });
+  return submission;
+}
 
 
