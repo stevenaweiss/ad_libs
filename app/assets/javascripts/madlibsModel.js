@@ -13,11 +13,11 @@ MadLib.prototype.findWordsToReplace = function(){
 //prompting user for answers with the word to replace, saving those answers to an array
 MadLib.prototype.getAnswers = function(){
   var findWords = this.findWordsToReplace();
-  findWords.forEach(function(word){
-      // var answer = prompt(word);
-      var answer = getAnswersInputs(word);
-      this.answers.push(answer);
-    }, this);
+    findWords.forEach(function(word){
+        // var answer = prompt(word);
+        var answer = getAnswersInputs(word);
+        this.answers.push(answer);
+      }, this);
   return this.answers;
 };
 
@@ -30,21 +30,25 @@ MadLib.prototype.replaceWords = function(){
 };
 
 
+// function getAnswersInputs(word){
+//   var newWord = word.replace(/[{}]/g, "");
+//   var submission;
+//   var wordText = $("#word-text");
+//   console.log("hey " + newWord);
+//   wordText.text(newWord + ":");
+//   $("#answer-text-label").submit(function(e){
+//     e.preventDefault();
+//      submission = $("#answer-text").val();
+//      console.log(submission);
+//      this.reset();
+//      wordText.text("");
+//      return submission;
+//   });
+//   return submission;
+// }
+
 function getAnswersInputs(word){
-  newWord = word.replace(/[{}]/g, "");
-  var submission;
-  var wordText = $("#word-text");
-  console.log("hey" + newWord);
-  wordText.text(newWord + ":");
-  $("#answer-text-label").submit(function(e){
-    e.preventDefault();
-     submission = $("#answer-text").val();
-     console.log(submission);
-     this.reset();
-     wordText.text("");
-     return submission;
-  });
-  return submission;
+  var input = $("<input>").attr("id", word);
+  var span = $("<span>").addClass("word-text").text(word + ":");
+  $("#answer-text-label").append(span).append(input);
 }
-
-

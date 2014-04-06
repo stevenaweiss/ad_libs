@@ -26,7 +26,7 @@ function getStorySkeletons(){
 function loadStoryTitles(){
   for(var i = 0; i < titleAndId.length; i++)
     $("#categories").append($("<option>").attr("value", titleAndId[i]["key"]).append(titleAndId[i]["key"]));
-  console.log("trying to load stories!");
+  console.log("loading stories!");
 }
 
 
