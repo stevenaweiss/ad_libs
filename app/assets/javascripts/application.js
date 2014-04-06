@@ -16,3 +16,14 @@
 //= require underscore
 //= require backbone
 //= require_tree .
+
+
+window.addEventListener('load', initializeGame, false);
+
+function initializeGame(){
+  getStorySkeletons();
+
+  // loadStoryTitles();
+
+
+}
