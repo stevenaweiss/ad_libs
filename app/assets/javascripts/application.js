@@ -22,8 +22,4 @@ window.addEventListener('load', initializeGame, false);
 
 function initializeGame(){
   getStorySkeletons();
-
-  // loadStoryTitles();
-
-
 }

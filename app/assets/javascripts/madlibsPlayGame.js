@@ -1,7 +1,7 @@
-// var newGame = new MadLib(storyText);
+var newGame;
 
 function playGame(){
-  var newGame = new MadLib(storyText);
+  newGame = new MadLib(storyText);
 
   newGame.findWordsToReplace();
 
@@ -11,10 +11,11 @@ function playGame(){
 
   var finishedStory = newGame.replaceWords();
 
-}
-
-appendStory = function(){
+  function appendStory(){
 
   $("body").append("<p>").append(finishedStory);
 
-};
+}
+  // return finishedStory;
+
+}
