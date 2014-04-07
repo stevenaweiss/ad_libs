@@ -32,7 +32,6 @@ function loadStoryTitles(){
 
 //adding form event listeners, removing controls once game is started, getting the story id by matching it against the selected story title.  
 
-
 function formEventListener(){
 
   $("#initiate-game").submit(function(e){

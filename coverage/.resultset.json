@@ -163,45 +163,8 @@
       "/Users/stevenweiss/dev/ad_libs/app/helpers/application_helper.rb": [
         1,
         null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/app/controllers/story_skeletons_controller.rb": [
-        1,
-        1,
-        2,
-        2,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/app/models/story_skeleton.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1396806491
+    "timestamp": 1396886146
   }
 }

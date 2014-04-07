@@ -14,12 +14,10 @@ MadLib.prototype.findWordsToReplace = function(){
 MadLib.prototype.getAnswers = function(){
   var findWords = this.findWordsToReplace();
     findWords.forEach(function(word){
-        // var answer = prompt(word);
         createAnswersInputs(word);
-        //MAKE THIS LINE WORK!!!!!!
-        // this.answers.push(getAnswersInput());
       }, this);
   this.answers = getAnswersInput();
+  // this.replaceWords();
   return this.answers;
 };
 
@@ -28,9 +26,11 @@ MadLib.prototype.replaceWords = function(){
   this.answers.forEach(function(answer){
     this.libText = this.libText.replace(/{([^}]*)}/, answer);
   }, this);
+  console.log(this.libText);
   return this.libText;
 };
 
+//appending a new text field for each word to replace 
 function createAnswersInputs(word){
   var newWord = word.replace(/[{}]/g, "");
   var li = $("<li>");
@@ -39,50 +39,21 @@ function createAnswersInputs(word){
   $("#answers-ul").append(li).append(span).append(input);
 }
 
+//pushing the text field responses to the answers array 
 function getAnswersInput(){
   var inputAnswers = [];
+  var form = $("#answer-text-label");
+
   $("#answer-text-label").submit(function(e){
     e.preventDefault();
     $("input[class=new-word]").each(function(){
       var th = $(this);
       inputAnswers.push(th.val());
-      console.log(inputAnswers);
+      // console.log(inputAnswers);
+      form.remove();
     });
   });
   return inputAnswers;
 }
 
-// function getAnswersInputs(word){
-//   var newWord = word.replace(/[{}]/g, "");
-//   var submission;
-//   var wordText = $("#word-text");
-//   console.log("hey " + newWord);
-//   wordText.text(newWord + ":");
-//   appendLiInputs();
-//   $("#answer-text-label").submit(function(e){
-//     e.preventDefault();
-//      submission = $("#answer-text").val();
-//      console.log(submission);
-//      this.reset();
-//      wordText.text("");
-//      return submission;
-//   });
-//   return submission;
-// }
 
-// function appendLiInputs(){
-//   var li = $("<li>");
-//   var input = $("<input>").attr("id", "new-word");
-//   var span = $("<span>").addClass("word-text").text(word + ":");
-//   $("#answers-ul").append(li).append(span).append(input);
-// }
-// function answerEventListener(){
-//   $("#answer-text-label").submit(function(e){
-//     e.preventDefault();
-//      submission = $("#answer-text").val();
-//      console.log(submission);
-//      this.reset();
-//      wordText.text("");
-//      return submission;
-//   });
-// }
