@@ -164,51 +164,39 @@
         1,
         null
       ],
-      "/Users/stevenweiss/dev/ad_libs/spec/support/database_cleaner.rb": [
+      "/Users/stevenweiss/dev/ad_libs/spec/features/player_starts_game_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         null,
         1,
         1,
-        null,
-        null,
-        1,
-        6,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        6,
-        null,
-        null,
-        1,
-        6,
-        null,
-        null,
-        null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/spec/models/story_skeleton_spec.rb": [
         1,
         null,
-        1,
-        2,
-        2,
-        2,
-        2,
         null,
-        null
-      ],
-      "/Users/stevenweiss/dev/ad_libs/app/models/story_skeleton.rb": [
         1,
         1,
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
         null
       ]
     },
-    "timestamp": 1396897853
+    "timestamp": 1396901435
   }
 }

@@ -33,7 +33,7 @@ MadLib.prototype.replaceWords = function(){
 function createAnswersInputs(word){
   var newWord = word.replace(/[{}]/g, "");
   var li = $("<li>");
-  var input = $("<input>").attr("class", "new-word");
+  var input = $("<input>").attr("class", "new-word").attr("id", newWord);
   var span = $("<span>").addClass("word-text").text(newWord + ":");
   $("#answers-ul").append(li).append(span).append(input);
 }
@@ -55,7 +55,6 @@ function getAnswersInput(){
   });
 
   return inputAnswers;
-
 }
 
 

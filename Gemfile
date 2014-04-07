@@ -34,7 +34,7 @@ end
 
 gem 'pry-rails', group: [:development, :test]
 
-group :test do
+group :development, :test do
   gem 'jasmine'
   gem 'rspec-rails'
 
