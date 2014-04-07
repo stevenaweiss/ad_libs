@@ -45,7 +45,6 @@ function formEventListener(){
         selectedStoryId = titleAndId[i]["val"];
       }
       getStorySkeletonText();
-      // playGame();
   });
 }
 
@@ -54,9 +53,12 @@ function getStorySkeletonText(){
   var story = $.getJSON("/story_skeletons/" + selectedStoryId).done(
     function(){
       storyText = story.responseJSON.story_text;
+      console.log("1 story text is " + storyText);
+      playGame();
     }
+    
     );
-  console.log(storyText);
+  // console.log("2 story text is" + storyText);
   return storyText;
 }
 

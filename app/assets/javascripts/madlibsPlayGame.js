@@ -4,14 +4,16 @@ function playGame(){
   newGame = new MadLib(storyText);
   newGame.findWordsToReplace();
   newGame.getAnswers();
-  // newGame.replaceWords();
+  newGame.replaceWords();
+
 }
 
+function afterAnswersSubmitted(){
+  newGame.replaceWords();
 
-  // newGame.replaceWords();
+  var finishedStory = newGame.replaceWords();
 
-  // var finishedStory = newGame.replaceWords();
+  $("#completed-story").append("<p>").append(finishedStory);
 
-  // $("#completed-story").append("<p>").append(finishedStory);
-
-  // return finishedStory;
+  return finishedStory;
+}
