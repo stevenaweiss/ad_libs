@@ -18,7 +18,7 @@ describe "a user can start a game", js: true do
     visit root_path
     save_and_open_page
     find('#categories').find(:xpath, 'option[2]').select_option
-    # find('#number-of-players').find(:xpath, 'option[2]').select_option
+    find('#number-of-players').find(:xpath, 'option[2]').select_option
     click_button("Start Game!")
   end
 end

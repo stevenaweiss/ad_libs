@@ -4,8 +4,7 @@ function playGame(){
   newGame = new MadLib(storyText);
   newGame.findWordsToReplace();
   newGame.getAnswers();
-  newGame.replaceWords();
-
+  // newGame.replaceWords();
 }
 
 function afterAnswersSubmitted(){

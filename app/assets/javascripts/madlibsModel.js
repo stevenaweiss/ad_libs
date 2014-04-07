@@ -17,7 +17,6 @@ MadLib.prototype.getAnswers = function(){
         createAnswersInputs(word);
       }, this);
   this.answers = getAnswersInput();
-  // this.replaceWords();
   return this.answers;
 };
 
@@ -26,7 +25,7 @@ MadLib.prototype.replaceWords = function(){
   this.answers.forEach(function(answer){
     this.libText = this.libText.replace(/{([^}]*)}/, answer);
   }, this);
-  console.log(this.libText);
+  console.log("replaceWords is running");
   return this.libText;
 };
 
@@ -52,8 +51,11 @@ function getAnswersInput(){
       // console.log(inputAnswers);
       form.remove();
     });
+    afterAnswersSubmitted();
   });
+
   return inputAnswers;
+
 }
 
 
