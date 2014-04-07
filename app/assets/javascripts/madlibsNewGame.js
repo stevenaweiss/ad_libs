@@ -36,6 +36,7 @@ function formEventListener(){
 
   $("#initiate-game").submit(function(e){
     e.preventDefault();
+    $("#submit-answers").css("display", "block");
     storyTitle = $("#categories").val();
     numberOfPlayers = $("#number-of-players").val();
     console.log("Story title is " + storyTitle);

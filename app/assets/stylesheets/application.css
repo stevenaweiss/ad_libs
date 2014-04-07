@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+
+#submit-answers {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
