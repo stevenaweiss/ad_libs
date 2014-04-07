@@ -16,8 +16,10 @@ MadLib.prototype.getAnswers = function(){
     findWords.forEach(function(word){
         // var answer = prompt(word);
         createAnswersInputs(word);
-        this.answers.push(getAnswersInput());
+        //MAKE THIS LINE WORK!!!!!!
+        // this.answers.push(getAnswersInput());
       }, this);
+  this.answers = getAnswersInput();
   return this.answers;
 };
 
@@ -38,13 +40,16 @@ function createAnswersInputs(word){
 }
 
 function getAnswersInput(){
+  var inputAnswers = [];
   $("#answer-text-label").submit(function(e){
     e.preventDefault();
     $("input[class=new-word]").each(function(){
       var th = $(this);
-      console.log(th.val());
+      inputAnswers.push(th.val());
+      console.log(inputAnswers);
     });
   });
+  return inputAnswers;
 }
 
 // function getAnswersInputs(word){

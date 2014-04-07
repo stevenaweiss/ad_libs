@@ -56,3 +56,15 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+require 'rubygems'
+require 'capybara'
+require 'capybara/dsl'
+
+Capybara.run_server = false
+Capybara.current_driver = :selenium
+
+Capybara.app_host = 'file://Users/stevenweiss/dev/ad_libs'
+
+RSpec.configure do |config|
+  config.include Capybara::DSL
+end
