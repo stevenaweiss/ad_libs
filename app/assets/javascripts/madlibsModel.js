@@ -15,8 +15,8 @@ MadLib.prototype.getAnswers = function(){
   var findWords = this.findWordsToReplace();
     findWords.forEach(function(word){
         // var answer = prompt(word);
-        var answer = getAnswersInputs(word);
-        this.answers.push(answer);
+        createAnswersInputs(word);
+        this.answers.push(getAnswersInput());
       }, this);
   return this.answers;
 };
@@ -29,6 +29,23 @@ MadLib.prototype.replaceWords = function(){
   return this.libText;
 };
 
+function createAnswersInputs(word){
+  var newWord = word.replace(/[{}]/g, "");
+  var li = $("<li>");
+  var input = $("<input>").attr("class", "new-word");
+  var span = $("<span>").addClass("word-text").text(newWord + ":");
+  $("#answers-ul").append(li).append(span).append(input);
+}
+
+function getAnswersInput(){
+  $("#answer-text-label").submit(function(e){
+    e.preventDefault();
+    $("input[class=new-word]").each(function(){
+      var th = $(this);
+      console.log(th.val());
+    });
+  });
+}
 
 // function getAnswersInputs(word){
 //   var newWord = word.replace(/[{}]/g, "");
@@ -36,6 +53,7 @@ MadLib.prototype.replaceWords = function(){
 //   var wordText = $("#word-text");
 //   console.log("hey " + newWord);
 //   wordText.text(newWord + ":");
+//   appendLiInputs();
 //   $("#answer-text-label").submit(function(e){
 //     e.preventDefault();
 //      submission = $("#answer-text").val();
@@ -47,10 +65,19 @@ MadLib.prototype.replaceWords = function(){
 //   return submission;
 // }
 
-function getAnswersInputs(word){
-  var newWord = word.replace(/[{}]/g, "");
-  var li = $("<li>");
-  var input = $("<input>").attr("id", newWord);
-  var span = $("<span>").addClass("word-text").text(word + ":");
-  $("#answers-ul").append(li).append(span).append(input);
-}
+// function appendLiInputs(){
+//   var li = $("<li>");
+//   var input = $("<input>").attr("id", "new-word");
+//   var span = $("<span>").addClass("word-text").text(word + ":");
+//   $("#answers-ul").append(li).append(span).append(input);
+// }
+// function answerEventListener(){
+//   $("#answer-text-label").submit(function(e){
+//     e.preventDefault();
+//      submission = $("#answer-text").val();
+//      console.log(submission);
+//      this.reset();
+//      wordText.text("");
+//      return submission;
+//   });
+// }
