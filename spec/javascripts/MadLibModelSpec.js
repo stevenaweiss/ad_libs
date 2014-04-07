@@ -5,5 +5,8 @@ describe("MadLib", function(){
     expect(newLib.findWordsToReplace()).toEqual(["{name}", "{place}"]);
   });
 
-
+  it("replaces words", function(){
+    newLib.answers = ["Steve", "hell"];
+    expect(newLib.replaceWords()).toEqual("hey Steve, go to hell");
+  });
 });
