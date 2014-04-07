@@ -22,7 +22,7 @@ describe "a user can start a game", js: true do
       fill_in 'food', :with => 'burger'
       fill_in 'something that smells terrible', :with => 'dead fish'
       fill_in 'exclamation', :with => 'wow'
-      click_button("submit-answer")
+      click_button("submit-answers")
       # save_and_open_page
     end
     expect(page).to have_content("Steve")

@@ -3,6 +3,7 @@
 <head>
   <title>AdLibs</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag 'jquery-ui-1.10.4.custom.css' %>
 
   <%= csrf_meta_tags %>
 </head>
@@ -10,5 +11,6 @@
 
 <%= yield %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag 'jquery-ui-1.10.4.custom.js', 'jquery-ui-1.10.4.custom.min.js' %>
 </body>
 </html>
