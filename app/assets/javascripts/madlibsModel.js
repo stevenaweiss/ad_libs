@@ -10,7 +10,17 @@ MadLib.prototype.findWordsToReplace = function(){
   return wordsToReplace;
 };
 
-//prompting user for answers with the word to replace, saving those answers to an array
+// prompting user for answers with the word to replace, saving those answers to an array
+// MadLib.prototype.getAnswers = function(){
+//   var findWords = this.findWordsToReplace();
+//     findWords.forEach(function(word){
+//         createAnswersInputs(word);
+//       }, this);
+//   this.answers = getAnswersInput();
+//   return this.answers;
+// };
+
+// //alternate getAnswers, trying to integrate multiple users
 MadLib.prototype.getAnswers = function(){
   var findWords = this.findWordsToReplace();
     findWords.forEach(function(word){
@@ -20,17 +30,9 @@ MadLib.prototype.getAnswers = function(){
   return this.answers;
 };
 
-//replacing all characters within {} with the answers array
-MadLib.prototype.replaceWords = function(){
-  this.answers.forEach(function(answer){
-    this.libText = this.libText.replace(/{([^}]*)}/, answer);
-  }, this);
-  console.log("replaceWords is running");
-  return this.libText;
-};
-
 //appending a new text field for each word to replace 
 function createAnswersInputs(word){
+  var playersInteger = parseInt(numberOfPlayers);
   var newWord = word.replace(/[{}]/g, "");
   var li = $("<li>");
   var input = $("<input>").attr("class", "new-word").attr("id", newWord).attr("required", true);
@@ -55,5 +57,17 @@ function getAnswersInput(){
   });
   return inputAnswers;
 }
+
+//replacing all characters within {} with the answers array
+MadLib.prototype.replaceWords = function(){
+  this.answers.forEach(function(answer){
+    this.libText = this.libText.replace(/{([^}]*)}/, answer);
+  }, this);
+  console.log("replaceWords is running");
+  return this.libText;
+};
+
+
+
 
 
