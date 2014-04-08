@@ -41,8 +41,8 @@ function afterAnswersSubmitted(){
   var home = $("<input type='button' id='play-again' value='Play Again!'>");
   var finishedStory = newGame.replaceWords();
   $("form").remove();
-  // $("#completed-story").effect("slide", 1000);
-  $("#completed-story").append("<p>").append(finishedStory);
+  $("#completed-story").css("display", "block").append("<p>").append(finishedStory);
+  $("#completed-story").effect("slide", 1000);
   // $("footer").append("<a href='/'> home!</a>");
   $("footer").append(home);
 
