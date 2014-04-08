@@ -1,21 +1,23 @@
 == Ad Libs!
 
+View on Heroku[http://ad-libs.herokuapp.com/]
+
+
 Ad Libs Pivotal Tracker[https://www.pivotaltracker.com/s/projects/1052682]
 
-View on Heroku[http://ad-libs.herokuapp.com/]
 
 A take on a childhood favorite.  The user picks a story, and is asked to input words in different categories.  The results are often absurd and whimsical, which is usually my goal every day.  
 
 The app was built with: 
 
+* Javascript
+
 * Ruby
 
 * Rails 4
-
-* Javascript
 
 * jQuery
 
 * Tested with Rspec, Capybara, and Jasmine
 
-
+This project was created for General Assembly's Jan 2014 Web Development Immersive
