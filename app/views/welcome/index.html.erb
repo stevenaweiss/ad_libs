@@ -28,8 +28,11 @@
       <button id="submit-answers">Submit Answers!</button>
     </form>
   </div>
-
 </div>
  <footer>
-    <%= link_to "Add A New Story!", new_story_skeleton_path %>
+  <section id="add-story-link">
+    <%= link_to("Add A New Story!", new_story_skeleton_path) if logged_in?%>
+    <%= link_to("Admin Log In", "/login") if session[:user_id].nil? %>
+    <%= link_to("Log Out #{User.find_by(id: session[:user_id]).name}!", "/session", method: "delete") unless session[:user_id].nil? %>
+  </section>
   </footer>
