@@ -21,4 +21,4 @@ The app was built with:
 
 This project was created for General Assembly's Jan 2014 Web Development Immersive
 
-<img src="Ad-libs-erd.jpg" />
+Ad-libs-erd.jpg
