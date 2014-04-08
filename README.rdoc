@@ -20,5 +20,3 @@ The app was built with:
 * Tested with Rspec, Capybara, and Jasmine
 
 This project was created for General Assembly's Jan 2014 Web Development Immersive
-
-Ad-libs-erd.jpg
