@@ -2,7 +2,6 @@
 
 View on Heroku[http://ad-libs.herokuapp.com/]
 
-
 Ad Libs Pivotal Tracker[https://www.pivotaltracker.com/s/projects/1052682]
 
 
@@ -21,3 +20,5 @@ The app was built with:
 * Tested with Rspec, Capybara, and Jasmine
 
 This project was created for General Assembly's Jan 2014 Web Development Immersive
+
+<img src="Ad-libs-erd.jpg" />
