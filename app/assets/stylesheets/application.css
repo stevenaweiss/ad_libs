@@ -34,7 +34,17 @@ ul {
   margin: 10px 10px 25px 10px;
   font-size: 1.5em;
   padding: 25px 10px 30px 10px;
+  border: 1px solid black;
   border-radius: 2.5px;
   background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-38.jpg);
   display: none;
+ /* -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+*/
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
+
 }
