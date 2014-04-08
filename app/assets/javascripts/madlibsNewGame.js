@@ -55,7 +55,7 @@ function getStorySkeletonText(){
   var story = $.getJSON("/story_skeletons/" + selectedStoryId).done(
     function(){
       storyText = story.responseJSON.story_text;
-      console.log("1 story text is " + storyText);
+      // console.log("1 story text is " + storyText);
       playGame();
     }
     
