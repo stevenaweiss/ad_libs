@@ -155,6 +155,17 @@
         null,
         null
       ],
+      "/Users/stevenweiss/dev/ad_libs/spec/factories/users.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/stevenweiss/dev/ad_libs/config/routes.rb": [
         1,
         1,
@@ -164,6 +175,71 @@
         null
       ],
       "/Users/stevenweiss/dev/ad_libs/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/spec/features/user_can_sign_up_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/spec/models/story_skeleton_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/app/models/story_skeleton.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/stevenweiss/dev/ad_libs/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -183,6 +259,6 @@
         null
       ]
     },
-    "timestamp": 1396968660
+    "timestamp": 1396969130
   }
 }

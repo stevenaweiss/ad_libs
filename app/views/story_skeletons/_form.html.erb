@@ -1,0 +1,25 @@
+<%= form_for @story_skeleton do |f| %>
+<p>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+<%= f.label :category %>
+<%= f.text_field :category %>
+</p>
+
+<p>
+<%= f.label :story_text %> 
+(make it funny)
+<%= f.text_area :story_text, size:"20x5" %>
+
+</p>
+
+<p>
+<%= f.label :number_of_ad_words %>
+<%= f.text_field :number_of_ad_words %>
+</p>
+
+  <%= f.submit @story_skeleton.id.nil? ? "Add!" : "Save Changes" %>
+<% end %>
