@@ -1,4 +1,4 @@
-== Ad Libs
+== Ad Libs!
 
 A take on a childhood favorite.  The user picks a story, and is asked to input words in different categories.  The results are often absurd and whimsical, which is usually my goal every day.  
 

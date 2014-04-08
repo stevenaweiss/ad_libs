@@ -29,7 +29,7 @@ function createAnswersInputs(word){
     var newWord = word.replace(/[{}]/g, "");
     var li = $("<li>");
     var input = $("<input>").attr("class", "new-word").attr("id", newWord).attr("required", true);
-    var span = $("<span>").addClass("word-text").text(playersInteger + newWord + ":");
+    var span = $("<span>").addClass("word-text").text(newWord + ":");
     $("#answers-ul").append(li).append(span).append(input);
     input.focus();
   } else { // end of words
