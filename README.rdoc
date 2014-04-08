@@ -1,27 +1,18 @@
-== README
+== Ad Libs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A take on a childhood favorite.  The user picks a story, and is asked to input words in different categories.  The results are often absurd and whimsical, which is usually my goal every day.  
 
-Things you may want to cover:
+The app was built with: 
 
-* Ruby version
+* Ruby
 
-* System dependencies
+* Rails 4
 
-* Configuration
+* Javascript
 
-* Database creation
+* jQuery
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Tested with Rspec, Capybara, and Jasmine
 
 
 Please feel free to use a different markup language if you do not plan to run

@@ -60,7 +60,6 @@ function getStorySkeletonText(){
     }
     
     );
-  // console.log("2 story text is" + storyText);
   return storyText;
 }
 

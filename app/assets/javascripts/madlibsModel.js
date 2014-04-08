@@ -3,6 +3,7 @@ function MadLib(libText){
   this.libText = libText;
   this.answers = [];
   this.iterator = 0;
+  this.numberOfPlayers;
 }
 
 //finding all words to replace by matching all characters within {}

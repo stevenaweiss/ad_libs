@@ -29,3 +29,7 @@ select{
 ul {
   list-style-type: none;
 }
+
+#completed-story{
+  padding-bottom: 25px;
+}
