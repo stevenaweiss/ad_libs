@@ -2,6 +2,7 @@ var titleAndId = [];
 var storyTitle;
 var selectedStoryId;
 var storyText;
+var numberOfPlayers;
 
 // retrieving story skeletons from DB to load in dropdown menu, adding form event listeners
 function getStorySkeletons(){
@@ -41,11 +42,11 @@ function formEventListener(){
     numberOfPlayers = $("#number-of-players").val();
     console.log("Story title is " + storyTitle);
     $("#initiate-game").remove();
-    for(var i = 0; i < titleAndId.length; i++)
-      if(titleAndId[i]["key"] == storyTitle){
-        selectedStoryId = titleAndId[i]["val"];
-      }
-      getStorySkeletonText();
+      for(var i = 0; i < titleAndId.length; i++)
+        if(titleAndId[i]["key"] == storyTitle){
+          selectedStoryId = titleAndId[i]["val"];
+        }
+        getStorySkeletonText();
   });
 }
 

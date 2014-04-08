@@ -47,9 +47,6 @@ function getAnswersInput(){
     e.preventDefault();
     $("input[class=new-word]").each(function(){
       var th = $(this);
-      // if(th.val() == nil ){
-      //   alert("yo, why you leavin this blank?");
-      // }else{
       inputAnswers.push(th.val());
       // console.log(inputAnswers);
       form.remove();

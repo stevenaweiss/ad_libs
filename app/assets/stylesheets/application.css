@@ -12,6 +12,15 @@
  *= require_tree .
  */
 
+body {
+  font-family: courier;
+  background-color: #BEC8E9;
+}
+
+select{
+  font-family: courier;
+}
+
 
 #submit-answers {
   display: none;

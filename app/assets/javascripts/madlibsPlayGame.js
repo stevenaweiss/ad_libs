@@ -10,7 +10,7 @@ function afterAnswersSubmitted(){
   newGame.replaceWords();
 
   var finishedStory = newGame.replaceWords();
-// .effect("slide", 1000)
+  // $("#completed-story").effect("slide", 1000);
   $("#completed-story").append("<p>").append(finishedStory);
 
   return finishedStory;
