@@ -13,17 +13,44 @@
  */
 
 body {
-  font-family: courier;
-  background-color: #BEC8E9;
-  font-size: 25px;
+  font-family: 'Prata', serif;
+  /*font-family: courier;*/
+  color: #191B09;
+  /*background-color: #BEC8E9;*/
+  background-image: linear-gradient(#8b9da9, #fff6e4);
+    /*box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);*/
+  min-height: 600px;
+  /*font-size: 25px;
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(#6689bb, #cbd5eb);
+  /*box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);*/
+/*  background-color: #fff;
+  background-size: 100% 1.2em;
+  background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                    -webkit-linear-gradient(#eee .05em, transparent .05em);
+  background-image: -moz-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                    -moz-linear-gradient(#eee .05em, transparent .05em);
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+                    linear-gradient(#eee .05em, transparent .05em);
+  -pie-background: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em,
+                   linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
+  behavior: url(/pie/PIE.htc);*/
+}
+
+#page-wrapper{
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 h1{
-  font-size: 75px;
+  font-size: 60px;
+  color: #193B4D;
 }
 
 select{
-  font-family: courier;
+  font-family: 'Prata', serif;
+  font-size: 15px;
 }
 
 footer {
@@ -34,8 +61,8 @@ footer {
 
 input[type=submit], button, input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
 cursor:pointer;
-font-size: 15px;
-font-family: courier;
+font-size: 10px;
+font-family: 'Prata', serif;
 border: 1px solid black;
 -webkit-border-radius: 5px;
 border-radius: 5px; }
@@ -51,16 +78,18 @@ ul {
 
 #completed-story{
   margin: 10px 10px 25px 10px;
-  font-size: 1.5em;
-  padding: 25px 10px 30px 10px;
+  font-size: 25px;
+  padding: 25px 15px 25px 15px;
   border: 1px solid black;
   border-radius: 2.5px;
-  background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-38.jpg);
   display: none;
+  /*background-color: white;
+  background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-38.jpg);
+  
  
   -moz-box-shadow:    inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
-
+*/
 
 }
