@@ -15,11 +15,30 @@
 body {
   font-family: courier;
   background-color: #BEC8E9;
+  font-size: 25px;
+}
+
+h1{
+  font-size: 75px;
 }
 
 select{
   font-family: courier;
 }
+
+footer {
+  float: right;
+  margin-right: 55px;
+  font-size: 12px;
+}
+
+input[type=submit], button, input[type=button] {padding:5px 15px; background:#ccc; border:0 none;
+cursor:pointer;
+font-size: 15px;
+font-family: courier;
+border: 1px solid black;
+-webkit-border-radius: 5px;
+border-radius: 5px; }
 
 
 #submit-answers {
@@ -38,10 +57,7 @@ ul {
   border-radius: 2.5px;
   background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-38.jpg);
   display: none;
- /* -moz-box-shadow:    3px 3px 5px 6px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-  box-shadow:         3px 3px 5px 6px #ccc;
-*/
+ 
   -moz-box-shadow:    inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow:         inset 0 0 10px #000000;
