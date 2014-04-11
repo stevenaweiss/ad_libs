@@ -3,7 +3,7 @@ function MadLib(libText){
   this.libText = libText;
   this.answers = [];
   this.iterator = 0;
-  this.numberOfPlayers;
+  // this.numberOfPlayers;
 }
 
 //finding all words to replace by matching all characters within {}
@@ -20,6 +20,20 @@ MadLib.prototype.getNextAdWord = function(){
   } else {
     return false;
   }
+};
+
+// //alternate getAnswers, trying to integrate multiple users
+MadLib.prototype.getAnswer = function(){
+  var findWords = this.findWordsToReplace();
+};
+
+//replacing all characters within {} with the answers array
+MadLib.prototype.replaceWords = function(){
+  this.answers.forEach(function(answer){
+    this.libText = this.libText.replace(/{([^}]*)}/, answer);
+  }, this);
+  console.log("replaceWords is running");
+  return this.libText;
 };
 
 // prompting user for answers with the word to replace, saving those answers to an array
@@ -41,21 +55,6 @@ MadLib.prototype.getNextAdWord = function(){
 //   var span = $("<span>").addClass("word-text").text(newWord + ":");
 //   $("#answers-ul").append(li).append(span).append(input);
 // }
-
-// //alternate getAnswers, trying to integrate multiple users
-MadLib.prototype.getAnswer = function(){
-  var findWords = this.findWordsToReplace();
-};
-
-//replacing all characters within {} with the answers array
-MadLib.prototype.replaceWords = function(){
-  this.answers.forEach(function(answer){
-    this.libText = this.libText.replace(/{([^}]*)}/, answer);
-  }, this);
-  console.log("replaceWords is running");
-  return this.libText;
-};
-
 
 
 
