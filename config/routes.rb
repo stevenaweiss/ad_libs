@@ -3,7 +3,7 @@ AdLibs::Application.routes.draw do
 
   resources :users, only: [:create]
 
-  resources :story_skeletons, only: [:new, :index, :create, :show]
+  resources :story_skeletons, only: [:new, :edit, :index, :create, :show]
 
   
   get "/login", to: "sessions#new"

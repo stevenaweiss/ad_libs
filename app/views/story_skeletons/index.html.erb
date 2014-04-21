@@ -1,0 +1,20 @@
+<div id="story-skeletons-list">
+  <ul>
+    <% @story_skeletons.each do |story| %>
+      <li>
+        <h2><%= story_skeleton.title %></h2>
+      </li>
+
+      <li>
+        <%= link_to "Edit", edit_story_skeleton_path(story_skeleton.id) %>
+      </li>
+
+      <li><%= form_tag ingredient_path(story_skeleton.id), method: "delete" do %>
+          <%= submit_tag("Delete!") %>
+          <% end %>
+        </li>
+    <% end  %>
+  </ul>
+
+
+</div>
