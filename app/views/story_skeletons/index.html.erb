@@ -1,6 +1,6 @@
 <div id="story-skeletons-list">
   <ul>
-    <% @story_skeletons.each do |story| %>
+    <% @story_skeletons.each do |story_skeleton| %>
       <li>
         <h2><%= story_skeleton.title %></h2>
       </li>
@@ -9,7 +9,7 @@
         <%= link_to "Edit", edit_story_skeleton_path(story_skeleton.id) %>
       </li>
 
-      <li><%= form_tag ingredient_path(story_skeleton.id), method: "delete" do %>
+      <li><%= form_tag story_skeleton_path(story_skeleton.id), method: "delete" do %>
           <%= submit_tag("Delete!") %>
           <% end %>
         </li>
