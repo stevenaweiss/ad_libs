@@ -13,8 +13,12 @@ class StorySkeletonsController < ApplicationController
   end
 
   def new
-    @story_skeleton = StorySkeleton.new
-    render(:new)
+    if current_user.nil?
+      redirect_to root_path
+    else
+      @story_skeleton = StorySkeleton.new
+      render(:new)
+    end
   end
 
   def create
